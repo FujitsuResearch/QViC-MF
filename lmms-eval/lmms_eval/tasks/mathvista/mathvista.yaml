@@ -1,0 +1,9 @@
+group: mathvista
+task:
+  - mathvista_testmini
+  - mathvista_test
+metadata:
+  version: 0.0
+  #gpt_eval_model_name: "gpt-3.5-turbo"
+  gpt_eval_model_name: "gpt-4o-mini" #ref. https://github.com/EvolvingLMMs-Lab/lmms-eval/issues/294
+  quick_extract: false

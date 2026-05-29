@@ -1,0 +1,83 @@
+[tool.black]
+line-length = 240
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qvic"
+version = "1.0.0"
+description = "QViC: Question-guided Visual Compression with Memory Feedback for Long-Term Video Understanding"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "CC-BY-NC-SA-4.0" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: Other/Proprietary License",
+]
+
+[project.optional-dependencies]
+eval = [
+    "torch==2.5.1",
+    "torchvision==0.20.1",
+    "transformers @ git+https://github.com/huggingface/transformers.git@1c39974a4c4036fd641bc1191cc32799f85715a4",
+    "tokenizers~=0.15.2",
+    "accelerate==0.29.3",
+    "peft==0.10.0",
+    "numpy==1.26.4",
+    "Pillow",
+    "decord",
+    "av",
+    "opencv-python",
+    "einops",
+    "einops-exts==0.0.4",
+    "sentencepiece~=0.1.99",
+    "timm",
+    "open_clip_torch",
+    "huggingface-hub",
+    "hf_transfer",
+    "tqdm",
+    "loguru",
+    "shortuuid",
+    "ftfy",
+    "openai",
+    "scipy",
+    "matplotlib",
+    "datasets==2.16.1",
+    "pyarrow",
+]
+
+[project.urls]
+"Homepage" = "https://huggingface.co/Fujitsu/QViC-MF-7B"
+
+[tool.setuptools.packages.find]
+include = ["qvic*"]
+exclude = [
+    "assets*",
+    "benchmark*",
+    "docs",
+    "dist*",
+    "playground*",
+    "scripts*",
+    "tests*",
+    "checkpoints*",
+    "lmms-eval*",
+    "wandb*",
+    "notebooks*",
+]
+
+[tool.wheel]
+exclude = [
+    "assets*",
+    "benchmark*",
+    "docs",
+    "dist*",
+    "playground*",
+    "scripts*",
+    "tests*",
+    "checkpoints*",
+    "lmms-eval*",
+    "wandb*",
+    "notebooks*",
+]
