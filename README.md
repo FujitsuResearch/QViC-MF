@@ -83,11 +83,10 @@ pip install -e .[eval]
 pip install plotly seaborn
 ```
 
-Some benchmarks rely on a Hugging Face token and/or OpenAI key for evaluation and grading:
+Some benchmarks (e.g. Video-MME) require a Hugging Face token to download gated datasets:
 
 ```bash
 export HF_TOKEN=...
-export OPENAI_API_KEY=...
 
 # Optional: a shared Hugging Face cache directory
 export HF_HOME=/path/to/hf_cache
