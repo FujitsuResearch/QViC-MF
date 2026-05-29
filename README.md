@@ -1,7 +1,7 @@
 # Question-guided Visual Compression with Memory Feedback for Long-Term Video Understanding
 
 [![arXiv](https://img.shields.io/badge/arXiv-2603.15167-b31b1b.svg)](https://arxiv.org/abs/2603.15167)
-[![CVPR 2026](https://img.shields.io/badge/CVPR-2026-blue.svg)](https://cvpr.thecvf.com/)
+[![CVPR 2026](https://img.shields.io/badge/CVPR-2026-blue.svg)](https://cvpr.thecvf.com/virtual/2026/poster/38553)
 [![HF Model](https://img.shields.io/badge/%F0%9F%A4%97%20HF-Fujitsu%2FQViC--MF--7B-yellow)](https://huggingface.co/Fujitsu/QViC-MF-7B)
 
 The official repository for the paper **Question-guided Visual Compression with Memory Feedback for Long-Term Video Understanding** (CVPR 2026).
@@ -79,9 +79,6 @@ cd ..
 # (re-pins transformers / tokenizers / peft to the versions QViC needs)
 pip install -e .[eval]
 
-# Optional: FlashAttention 2 for faster inference
-pip install flash-attn --no-build-isolation
-
 # Optional: extra packages for debugging / visualization
 pip install plotly seaborn
 ```
@@ -100,7 +97,6 @@ Additional notes:
 
 - Pointing `HF_HOME` to a shared cache directory avoids re-downloading models and datasets across multiple evaluation jobs.
 - If you share Hugging Face cache data between users, remember to set the appropriate filesystem permissions so that the other users can read the cached files.
-- Installing `flash-attn` is optional; the model also runs with `attn_implementation="sdpa"`.
 
 ## Download the model
 
