@@ -24,7 +24,7 @@ Sosuke Yamao\*, Natsuki Miyahara\*, Yuankai Qi, Shun Takeuchi (Fujitsu Research 
 ## News
 
 - **[2026.03]** Paper accepted to CVPR 2026. [[arXiv]](https://arxiv.org/abs/2603.15167)
-- **[2026.05]** Code and pretrained weights ([`Fujitsu/QViC-MF-7B`](https://huggingface.co/Fujitsu/QViC-MF-7B)) released.
+- **[2026.06]** Code and pretrained weights ([`Fujitsu/QViC-MF-7B`](https://huggingface.co/Fujitsu/QViC-MF-7B)) released.
 
 ## Abstract
 
